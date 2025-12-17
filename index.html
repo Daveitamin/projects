@@ -15,19 +15,37 @@
 
     <section class="cards">
       <!-- Chatbot -->
-      <a class="card" href="https://daveitamin.github.io/car-chatbot-web" target="_blank" rel="noreferrer">
-        <div class="card-top">
-          <h2 class="title-left">Chatbot</h2>
-	  <div class="badge azure">
-    		<img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftazure.svg" alt="Azure" />
-    		Azure
-  	  </div>
-        </div>
-        <p class="desc">
-          Autós kérdezz–felelek chatbot, Azure-ben futó megoldás, publikus demóval.
-        </p>
-        <div class="cta">Megnyitás →</div>
-      </a>
+      <div class="card" id="chatbot-card" tabindex="0">
+  <div class="card-top">
+    <h2 class="title-left">Chatbot</h2>
+    <div class="badge azure">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftazure.svg" alt="Azure" />
+      Azure
+    </div>
+  </div>
+
+  <p class="desc">
+    Autós kérdezz–felelek chatbot, Azure-ben futó megoldás, publikus demóval.
+  </p>
+
+  <div class="cta">Opciók megjelenítése ↓</div>
+
+  <!-- REJTETT GOMBOK -->
+  <div class="card-actions" hidden>
+    <a class="action-btn"
+       href="https://daveitamin.github.io/car-chatbot-web"
+       target="_blank" rel="noreferrer">
+      ▶ Demo
+    </a>
+
+    <a class="action-btn"
+       href="https://daveitamin.github.io/chatbot-presentation"
+       target="_blank" rel="noreferrer">
+      📊 Presentation
+    </a>
+  </div>
+ </div>
+
 
       <!-- Ping Teszt -->
       <a class="card" href="https://daveitamin.github.io/pingtest" target="_blank" rel="noreferrer">
@@ -54,6 +72,20 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
+  <script>
+    const card = document.getElementById("chatbot-card");
+    const actions = card.querySelector(".card-actions");
+    const cta = card.querySelector(".cta");
+
+    card.addEventListener("click", () => {
+      const open = !actions.hasAttribute("hidden");
+      actions.toggleAttribute("hidden", open);
+      cta.textContent = open
+        ? "Opciók megjelenítése ↓"
+        : "Opciók elrejtése ↑";
+    });
+  </script>
   
 </body>
 </html>
+
