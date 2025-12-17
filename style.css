@@ -151,6 +151,34 @@ body{
           hue-rotate(190deg) brightness(96%) contrast(101%);
 }
 
+.card-actions{
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.action-btn{
+  flex: 1;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid var(--border);
+  transition: background .15s ease, transform .15s ease;
+}
+
+.action-btn:hover{
+  background: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+}
+
+.card-actions[hidden]{
+  display: none !important;
+}
+
 
 /* Élő háttér*/
 body::before{
@@ -185,3 +213,4 @@ body::before{
 @media (prefers-reduced-motion: reduce){
   body::before{ animation: none; }
 }
+
