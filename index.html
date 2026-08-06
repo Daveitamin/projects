@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Dávid Vincze</title>
+  <meta name="description" content="Selected cloud, automation and self-hosted infrastructure projects by Dávid Vincze — with live demos." />
+  <meta name="color-scheme" content="dark" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%231f232b'/><text y='.9em' x='50%25' text-anchor='middle' font-size='62' fill='%237ba0ff' font-family='sans-serif' font-weight='bold'>D</text></svg>" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+
+  <div class="wrap">
+
+    <!-- ========== Header ========== -->
+    <header class="header">
+      <p class="eyebrow"><span class="dot"></span> Portfolio</p>
+
+      <h1>Featured <span class="grad">projects</span></h1>
+
+      <p class="lead">
+        Hands-on projects focused on cloud infrastructure, automation and self-hosted services.
+        Every project below includes a live demonstration or publicly accessible deployment.
+      </p>
+
+      <ul class="meta">
+        <li>Microsoft Azure</li>
+        <li>Docker</li>
+        <li>Web &amp; Automation</li>
+      </ul>
+    </header>
+
+    <!-- ========== Projects ========== -->
+    <main class="cards">
+
+      <!-- 01 — Self-Hosted Infrastructure -->
+      <article class="card card--blue" id="media-card">
+        <div class="card-top">
+          <span class="card-num">01</span>
+          <span class="badge">
+            <i class="icon icon--docker" aria-hidden="true"></i>Docker
+          </span>
+        </div>
+
+        <h2>Self-Hosted Infrastructure</h2>
+
+        <p class="desc">
+          Production-like self-hosted infrastructure featuring Docker, 
+          Caddy reverse proxy, automatic HTTPS, Jellyfin and Seerr.
+        </p>
+
+        <ul class="tags">
+          <li>Docker</li>
+          <li>Docker Compose</li>
+          <li>Caddy</li>
+          <li>HTTPS</li>
+          <li>Jellyfin</li>
+          <li>Seerr</li>
+        </ul>
+
+        <div class="card-foot">
+          <button class="btn btn--ghost" type="button"
+                  data-toggle="media-card"
+                  aria-expanded="false"
+                  aria-controls="media-panel">
+            Show details
+            <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="panel" id="media-panel">
+          <div class="panel-inner">
+            <div class="panel-body">
+
+              <div>
+                <p class="panel-label">Open Live demo</p>
+                <a class="panel-link"
+                   href="https://nevio.hu"
+                   target="_blank" rel="noreferrer noopener">
+                  nevio.hu
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                       stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </a>
+              </div>
+
+              <div>
+                <p class="panel-label">Demo account</p>
+
+                <div class="cred">
+                  <span>Username</span>
+                  <code data-copy-value="demo">demo</code>
+                  <button class="copy" type="button" data-copy="demo">Copy</button>
+                </div>
+
+                <div class="cred">
+                  <span>Password</span>
+                  <code data-copy-value="demo2026">demo2026</code>
+                  <button class="copy" type="button" data-copy="demo2026">Copy</button>
+                </div>
+              </div>
+
+              <p class="note">
+                This demo is provided exclusively
+                to showcase the infrastructure, deployment process and user interface.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 — Chatbot -->
+      <article class="card card--violet" id="chatbot-card">
+        <div class="card-top">
+          <span class="card-num">02</span>
+          <span class="badge">
+            <i class="icon icon--azure" aria-hidden="true"></i>Azure
+          </span>
+        </div>
+
+        <h2>Automotive Q&amp;A Chatbot</h2>
+
+        <p class="desc">
+          Cloud-based Q&A chatbot running on 
+          Microsoft Azure with a public demonstration available.
+        </p>
+
+        <ul class="tags">
+          <li>Azure</li>
+          <li>AI</li>
+          <li>Q&amp;A</li>
+          <li>Web demo</li>
+        </ul>
+
+        <div class="card-foot">
+          <button class="btn btn--ghost" type="button"
+                  data-toggle="chatbot-card"
+                  aria-expanded="false"
+                  aria-controls="chatbot-panel">
+            Show options
+            <svg class="chev" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="panel" id="chatbot-panel">
+          <div class="panel-inner">
+            <div class="panel-body">
+              <div>
+                <p class="panel-label">Available links</p>
+                <div class="card-foot" style="padding-top:12px">
+                  <a class="btn btn--primary"
+                     href="https://daveitamin.github.io/car-chatbot-web"
+                     target="_blank" rel="noreferrer noopener">
+                    Open Live Demo
+                    <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                         stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h13M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+
+                  <a class="btn"
+                     href="https://daveitamin.github.io/chatbot-presentation"
+                     target="_blank" rel="noreferrer noopener">
+                    Presentation
+                    <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                         stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h13M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 — Website Availability -->
+      <article class="card card--mint">
+        <div class="card-top">
+          <span class="card-num">03</span>
+          <span class="badge">
+            <i class="icon icon--azure" aria-hidden="true"></i>Azure
+          </span>
+        </div>
+
+        <h2>Website Availability</h2>
+
+        <p class="desc">
+          A ping and availability testing demo powered by Azure, with a simple
+          public interface for checking whether a site is reachable.
+        </p>
+
+        <ul class="tags">
+          <li>Azure</li>
+          <li>ASP.NET Core</li>
+          <li>REST API</li>
+        </ul>
+
+        <div class="card-foot">
+          <a class="btn btn--primary"
+             href="https://daveitamin.github.io/pingtest"
+             target="_blank" rel="noreferrer noopener">
+            Open Live Demo
+            <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                 stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <span>© <span id="year"></span> <strong>Dávid Vincze</strong></span>
+      <!-- <span>Built with plain HTML &amp; CSS</span> --->
+    </footer>
+
+  </div>
+
+  <script>
+    /* ---- Current year ---- */
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---- Expandable cards (state persisted) ---- */
+    document.querySelectorAll("[data-toggle]").forEach(function (btn) {
+      var card = document.getElementById(btn.dataset.toggle);
+      if (!card) return;
+
+      var key = btn.dataset.toggle + ":open";
+      var label = btn.childNodes[0];
+
+      function render(open) {
+        card.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+        label.nodeValue = (open ? "Hide " : "Show ") +
+          (btn.dataset.toggle === "chatbot-card" ? "options " : "details ");
+      }
+
+      render(localStorage.getItem(key) === "true");
+
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") !== "true";
+        render(open);
+        try { localStorage.setItem(key, open); } catch (e) {}
+      });
+    });
+
+    /* ---- Copy to clipboard ---- */
+    document.querySelectorAll("[data-copy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+          btn.textContent = "Copied";
+          btn.classList.add("is-done");
+          setTimeout(function () {
+            btn.textContent = "Copy";
+            btn.classList.remove("is-done");
+          }, 1400);
+        });
+      });
+    });
+
+    /* ---- Cursor spotlight on cards ---- */
+    if (window.matchMedia("(hover: hover)").matches &&
+        !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.querySelectorAll(".card").forEach(function (card) {
+        card.addEventListener("pointermove", function (e) {
+          var r = card.getBoundingClientRect();
+          card.style.setProperty("--mx", (e.clientX - r.left) + "px");
+          card.style.setProperty("--my", (e.clientY - r.top) + "px");
+        });
+      });
+    }
+  </script>
+</body>
+</html>
